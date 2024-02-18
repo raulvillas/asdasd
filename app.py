@@ -12,7 +12,7 @@ def numero(numero):
 @app.route('/enviar', methods=['POST'])
 def enviar():
     
-    chat_id = "-100"+request.form['chat_id']
+    chat_id = "-"+request.form['chat_id']
     email = request.form['mail_address']
     password = request.form['mail_pass']
     
